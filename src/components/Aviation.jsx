@@ -16,7 +16,7 @@ function Aviation({navbarSelected}) {
                     and allowing anybody at home to connect and simulate their flight. In addition to simulated flights, you are also
                     able to train to become an Air Traffic Controller.
                 </p>
-                <a target="_blank" href={vatsimLink}>More information on VATSIM!</a>
+                <a target="_blank" rel="noreferrer" href={vatsimLink}>More information on VATSIM!</a>
 
                 <h2>NYARTCC</h2>
                 <p>
@@ -25,7 +25,7 @@ function Aviation({navbarSelected}) {
                     (one of only ~15 controllers to do on a roster of over 200), and joining the staff as a Mentor, the Newark Facility Coordinator,
                     a member of the Web Team, and the Social Media Manager.
                 </p>
-                <a target="_blank" href={nyartccLink}>More information on the NYARTCC!</a>
+                <a target="_blank" rel="noreferrer" href={nyartccLink}>More information on the NYARTCC!</a>
             </div>
         </AviationInfo>
     )

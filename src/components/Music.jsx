@@ -37,7 +37,7 @@ function Music({navbarSelected}) {
                     but it was a great way to meet new people and it gave me so many new opportunities to play music. It was through this that I met incredibly talented artists
                     including most of the ones I'll mention below.
                 </p>
-                <a target="_blank" href={songwritingClubLink}>More information on the Songwriting Club!</a>
+                <a target="_blank" rel="noreferrer" href={songwritingClubLink}>More information on the Songwriting Club!</a>
 
                 <h2>
                     Songs I've Played On

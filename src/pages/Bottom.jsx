@@ -9,9 +9,9 @@ function Bottom() {
     return (
         <BottomDiv>
             <div>
-                <a target="_blank" href={linkedInLink}>LinkedIn</a>
-                <a target="_blank" href={gitHubLink}>GitHub</a>
-                <a target="_blank" href={instagramLink}>Instagram</a>
+                <a target="_blank" rel="noreferrer" href={linkedInLink}>LinkedIn</a>
+                <a target="_blank" rel="noreferrer" href={gitHubLink}>GitHub</a>
+                <a target="_blank" rel="noreferrer" href={instagramLink}>Instagram</a>
             </div>
         </BottomDiv>
     )

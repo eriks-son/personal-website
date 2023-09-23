@@ -25,7 +25,7 @@ function Work({navbarSelected}) {
                     and I was fortunate enough to be given real tickets and real responsibility the moment I was onboarded. This has forced me to get comfortable with
                     the stack and the business operations quickly without feeling like I was drowning in new information.
                 </p>
-                <a target="_blank" href={cgfLink}>More information on CastleGate Forwarding!</a>
+                <a target="_blank" rel="noreferrer" href={cgfLink}>More information on CastleGate Forwarding!</a>
 
                 <h2>LiLLiPiES Bakery</h2>
                 <p>
@@ -38,7 +38,7 @@ function Work({navbarSelected}) {
                     I worked there for over 4 years and throughout my time I trained over 20 different employees. It's one of the first places I visit whenever I'm
                     back home in New Jersey and Jen will always be like a second mom to me.
                 </p>
-                <a target="_blank" href={lillipiesLink}>More information on LiLLiPiES!</a>
+                <a target="_blank" rel="noreferrer" href={lillipiesLink}>More information on LiLLiPiES!</a>
             </div>
         </WorkInfo>
     )
