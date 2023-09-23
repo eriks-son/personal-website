@@ -2,10 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 function Work({navbarSelected}) {
+    const cgfLink = "https://sell.wayfair.com/operate-castlegate-forwarding";
+    const lillipiesLink = "https://lillipies.com/";
+
     if (navbarSelected === "work") return (
         <WorkInfo>
             <div className='items'>
-                <h2>Wayfair</h2>
+                <h2>Wayfair (CGF)</h2>
                 <p>
                     Starting in July of 2023, I was selected for a co-op as a Software Engineer at Wayfair in Boston, MA. 
                     I was assigned to the Order Management System (OMS) team for Wayfair's own CasteGate Forwarding (CGF).
@@ -22,6 +25,20 @@ function Work({navbarSelected}) {
                     and I was fortunate enough to be given real tickets and real responsibility the moment I was onboarded. This has forced me to get comfortable with
                     the stack and the business operations quickly without feeling like I was drowning in new information.
                 </p>
+                <a target="_blank" href={cgfLink}>More information on CastleGate Forwarding!</a>
+
+                <h2>LiLLiPiES Bakery</h2>
+                <p>
+                    LiLLiPiES was my first ever job, starting the summer after my freshman year of high school. It's a family owned and run bakery opened by
+                    Jennifer Carson in Princeton, NJ after years of selling her baked goods in farmers markets. She has such an honest love for her work that
+                    is infectious and makes it such a delightful and familial work environment.
+                </p>
+                <p>
+                    Working at LiLLiPiES helped me learn many important life skills, from helping customers to working with and supervising other employees.
+                    I worked there for over 4 years and throughout my time I trained over 20 different employees. It's one of the first places I visit whenever I'm
+                    back home in New Jersey and Jen will always be like a second mom to me.
+                </p>
+                <a target="_blank" href={lillipiesLink}>More information on LiLLiPiES!</a>
             </div>
         </WorkInfo>
     )
@@ -31,6 +48,12 @@ function Work({navbarSelected}) {
 const WorkInfo = styled.div`
     .items {
         display: block;
+    }
+
+    a {
+        color: #e0b6dc;
+        text-decoration: none;
+        font-size: 20px;
     }
 `
 
