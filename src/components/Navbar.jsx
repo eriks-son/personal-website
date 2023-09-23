@@ -6,11 +6,11 @@ function Navbar({navbarSelected, setNavbarSelected}) {
         <NavBar>
             <div>
                 <ul>
-                    <li className={navbarSelected === "work" ? "active" : ""} onClick={() => setNavbarSelected("work")}>
-                        <h3>Work</h3>
-                    </li>
                     <li className={navbarSelected === "aviation" ? "active" : ""} onClick={() => setNavbarSelected("aviation")}>
                         <h3>Aviation</h3>
+                    </li>
+                    <li className={navbarSelected === "work" ? "active" : ""} onClick={() => setNavbarSelected("work")}>
+                        <h3>Work</h3>
                     </li>
                     <li className={navbarSelected === "music" ? "active" : ""} onClick={() => setNavbarSelected("music")}>
                         <h3>Music</h3>
