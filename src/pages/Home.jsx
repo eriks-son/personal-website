@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Navbar from '../components/Navbar.jsx';
 import Work from '../components/Work.jsx';
 import Music from '../components/Music.jsx';
+import Aviation from '../components/Aviation.jsx';
 
 function Home() {
     const [navbarSelected, setNavbarSelected] = useState("");
@@ -28,6 +29,7 @@ function Home() {
             <Navbar navbarSelected={navbarSelected} setNavbarSelected={setNavbarSelected} />
             <BodyCard>
                 <div className='bodyCardItems'>
+                    <Aviation navbarSelected={navbarSelected} />
                     <Work navbarSelected={navbarSelected} />
                     <Music navbarSelected={navbarSelected} />
                 </div>
@@ -44,14 +46,12 @@ const BodyCard = styled.div`
     }
 
     h2 {
-        margin: 20px;
         font-size: 50px;
         color: #e0b6dc;
         background: none;
     }
 
     p {
-        margin: 10px;
         font-size: 20px;
         color: pink;
         background: none;

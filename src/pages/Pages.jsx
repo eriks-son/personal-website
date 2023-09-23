@@ -1,3 +1,4 @@
+import Bottom from './Bottom';
 import Home from './Home';
 import { Route, Routes } from 'react-router-dom';
 
@@ -9,6 +10,7 @@ function Pages() {
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
+        <Bottom />
       </div>
     )
   }
