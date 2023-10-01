@@ -38,6 +38,7 @@ function Work({navbarSelected}) {
                     I worked there for over 4 years and throughout my time I trained over 20 different employees. It's one of the first places I visit whenever I'm
                     back home in New Jersey and Jen will always be like a second mom to me.
                 </p>
+                <img src='Lillipies photo.jpg' alt='Photo of Jen Carson'></img>
                 <a target="_blank" rel="noreferrer" href={lillipiesLink}>More information on LiLLiPiES!</a>
             </div>
         </WorkInfo>
@@ -47,13 +48,16 @@ function Work({navbarSelected}) {
 
 const WorkInfo = styled.div`
     .items {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    a {
-        color: #e0b6dc;
-        text-decoration: none;
-        font-size: 20px;
+    img {
+        width: 278px;
+        height: 300px;
+        align-items: center;
+        margin: 35px;
     }
 `
 

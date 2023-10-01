@@ -28,7 +28,7 @@ const BottomDiv = styled.div`
     }
 
     a {
-        color: #e0b6dc;
+        color: #C44F8C;
         text-decoration: none;
         font-size: 20px;
     }

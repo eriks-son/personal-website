@@ -64,12 +64,6 @@ const MusicInfo = styled.div`
     .items {
         display: block
     }
-
-    a {
-        color: #e0b6dc;
-        text-decoration: none;
-        font-size: 20px;
-    }
 `
 
 

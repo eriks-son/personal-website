@@ -21,7 +21,7 @@ function Home() {
                     <div className="bluPhoto" alt='Photo of me opening for Blu DeTiger'/>
                     <TitleText>
                         <h2>
-                            August Eriksson
+                            AUGUST ERIKSSON
                         </h2>
                     </TitleText>
                 </BannerImage>
@@ -42,26 +42,63 @@ function Home() {
 
 const BodyCard = styled.div`
     .bodyCardItems {
-        width: 40vw;
+        width: 40%;
     }
 
     h2 {
         font-size: 50px;
-        color: #e0b6dc;
+        color: #C44F8C;
         background: none;
     }
 
     p {
         font-size: 20px;
-        color: pink;
+        color: #e0b6dc;
         background: none;
+    }
+
+    a {
+        color: #8392E7;
+        text-decoration: none;
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    /* Smartphones */
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        .bodyCardItems {
+            width: 80%;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+    
+        p {
+            font-size: 20px;
+        }
+    }
+    
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        .bodyCardItems {
+            width: 70%;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+    
+        p {
+            font-size: 23px;
+        }
     }
 `
 
 
 const TitleText = styled.div`
     h2 {
-        font-size: 10vw;
+        font-size: 8vw;
         color: #e0b6dc;
         left: 0%;
         background: none;
@@ -98,7 +135,7 @@ const Background = styled.div`
         background-size: cover;
         display: flex;
         justify-content: center;
-        font-family: 'Fjord One', serif;
+        font-family: 'Montserrat', sans-serif;
     }
 
     .test {

@@ -24,8 +24,8 @@ function Navbar({navbarSelected, setNavbarSelected}) {
 
 const NavBar = styled.div`
     h3 {
-        font-size: 50px;
-        color: #e0b6dc;
+        font-size: 3.7vw;
+        color: #C44F8C;
         background: none;
         font: bold;
     }
