@@ -1,9 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
+import { ReadMore } from './ReadMore';
+import { ReadMoreWayfair } from './read_mores/ReadMoreWayfair';
 
 function Work({navbarSelected}) {
     const cgfLink = "https://sell.wayfair.com/operate-castlegate-forwarding";
     const lillipiesLink = "https://lillipies.com/";
+    const readMoreWayfair = (
+        <ReadMoreWayfair />
+    );
+    const readMoreWayfairShowText = "Click to read more about a specific problem I tackled!";
 
     if (navbarSelected === "work") return (
         <WorkInfo>
@@ -20,8 +26,11 @@ function Work({navbarSelected}) {
                     This was my first time having to be concerned with all the different combinations of orders and bookings and forced me to get comfortable with not just
                     the technical aspects of the job, but the business ones as well.
                 </p>
+
+                <ReadMore content={readMoreWayfair} showText={readMoreWayfairShowText} />
+
                 <p>
-                    I am also incredibly fortunate for the welcoming and helpful team. Everybody involved is never more than a Slack message away from helping me as I was getting set up
+                    I was also incredibly fortunate for the welcoming and helpful team. Everybody involved was never more than a Slack message away from helping me as I was getting set up
                     and I was fortunate enough to be given real tickets and real responsibility the moment I was onboarded. This has forced me to get comfortable with
                     the stack and the business operations quickly without feeling like I was drowning in new information.
                 </p>

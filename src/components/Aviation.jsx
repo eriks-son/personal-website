@@ -1,9 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
+import { ReadMoreVatsim } from './read_mores/ReadMoreVatsim';
+import { ReadMore } from './ReadMore';
+import { ReadMoreFlightLessons } from './read_mores/ReadMoreFlightLessons';
 
 function Aviation({navbarSelected}) {
     const vatsimLink = "https://vatsim.net/";
     const nyartccLink = "https://nyartcc.org/";
+    const readMoreVatsim = (
+        <ReadMoreVatsim />
+    );
+    const readMoreVatsimShowText = "Click to read more about my favorite NYARTCC moment!";
+    const readMoreFlightLessons = (
+        <ReadMoreFlightLessons />
+    );
+    const readMoreFlightLessionsShowText = "Click to read more about flight lessons!"
 
     if (navbarSelected === "aviation") return (
         <AviationInfo>
@@ -16,6 +27,10 @@ function Aviation({navbarSelected}) {
                     and allowing anybody at home to connect and simulate their flight. In addition to simulated flights, you are also
                     able to train to become an Air Traffic Controller.
                 </p>
+
+                <ReadMore content={readMoreFlightLessons} showText={readMoreFlightLessionsShowText} />
+
+                <br />
                 <a target="_blank" rel="noreferrer" href={vatsimLink}>More information on VATSIM!</a>
 
                 <h2>NYARTCC</h2>
@@ -25,6 +40,10 @@ function Aviation({navbarSelected}) {
                     (one of only ~15 controllers to do on a roster of over 200), and joining the staff as a Mentor, the Newark Facility Coordinator,
                     a member of the Web Team, and the Social Media Manager.
                 </p>
+
+                <ReadMore content={readMoreVatsim} showText={readMoreVatsimShowText} />
+
+                <br />
                 <a target="_blank" rel="noreferrer" href={nyartccLink}>More information on the NYARTCC!</a>
             </div>
         </AviationInfo>

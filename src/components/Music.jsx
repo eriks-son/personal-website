@@ -1,8 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import Carousel from './Carousel';
+import { ReadMoreMusic } from './read_mores/ReadMoreMusic';
+import { ReadMore } from './ReadMore';
 
 function Music({navbarSelected}) {
+    const readMoreMusic = (
+        <ReadMoreMusic />
+    );
+    const readMoreMusicShowText = "Click to read more about some amazing musical opportunities I've had!"
     const songsIvePlayed = [
         `<iframe style={{"border-radius": "12px"}} src="https://open.spotify.com/embed/track/0731deLwmQsvfvHmfL0Vup?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
         `<iframe style={{"border-radius": "12px"}} src="https://open.spotify.com/embed/track/3DPunWJcudK88nW03nFioE?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
@@ -37,6 +43,10 @@ function Music({navbarSelected}) {
                     but it was a great way to meet new people and it gave me so many new opportunities to play music. It was through this that I met incredibly talented artists
                     including most of the ones I'll mention below.
                 </p>
+
+                <ReadMore content={readMoreMusic} showText={readMoreMusicShowText} />
+
+                <br /> 
                 <a target="_blank" rel="noreferrer" href={songwritingClubLink}>More information on the Songwriting Club!</a>
 
                 <h2>
