@@ -12,22 +12,22 @@ export const ReadMore = ({content, showText}) => {
         return (
             <ShowHide>
                 <div className='contents'>
-                    <a onClick={toggleOpen}>
+                    <button onClick={toggleOpen}>
                         Hide
-                    </a>
+                    </button>
                     {content}
-                    <a onClick={toggleOpen}>
+                    <button onClick={toggleOpen}>
                         Hide
-                    </a>
+                    </button>
                 </div>
             </ShowHide>
         );
     } else {
         return (
             <ShowHide>
-                <a onClick={toggleOpen}>
+                <button onClick={toggleOpen}>
                     {showText}
-                </a>
+                </button>
             </ShowHide>
         )
     }
@@ -46,7 +46,15 @@ const ShowHide = styled.div`
         align-items: center;
     }
 
-    a {
+    button {
+        background: none;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        color: #8392E7;
+        text-decoration: none;
+        font-size: 20px;
         font-style: normal;
     }
 `
