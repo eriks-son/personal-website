@@ -10,6 +10,7 @@ function Music({navbarSelected}) {
     );
     const readMoreMusicShowText = "Click to read more about some amazing musical opportunities I've had!"
     const songsIvePlayed = [
+        `<iframe style={{"border-radius": "12px"}} src="https://open.spotify.com/embed/track/1JklprC93mtLPeqn8D2w02?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
         `<iframe style={{"border-radius": "12px"}} src="https://open.spotify.com/embed/track/3zejtdOOa90ObNXH92gvhW?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
         `<iframe style={{"border-radius": "12px"}} src="https://open.spotify.com/embed/track/0731deLwmQsvfvHmfL0Vup?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
         `<iframe style={{"border-radius": "12px"}} src="https://open.spotify.com/embed/track/3DPunWJcudK88nW03nFioE?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
@@ -42,7 +43,7 @@ function Music({navbarSelected}) {
                 <p>
                     Fortunately, a High School friend who went to Northeastern as well introduced me to the Songwriting Club. I don't write my own music,
                     but it was a great way to meet new people and it gave me so many new opportunities to play music. It was through this that I met incredibly talented artists
-                    including most of the ones I'll mention below.
+                    including most of the ones I'll mention below. Additionally, the songs I have played on below have over 150k combined plays on Spotify!
                 </p>
 
                 <ReadMore content={readMoreMusic} showText={readMoreMusicShowText} />
