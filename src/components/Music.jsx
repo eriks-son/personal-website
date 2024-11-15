@@ -1,14 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 import Carousel from './Carousel';
-import { ReadMoreMusic } from './read_mores/ReadMoreMusic';
-import { ReadMore } from './ReadMore';
 
 function Music({navbarSelected}) {
-    const readMoreMusic = (
-        <ReadMoreMusic />
-    );
-    const readMoreMusicShowText = "Click to read more about some amazing musical opportunities I've had!"
+    const favPhotos = [
+        `<img src='common-cents-group.jpeg' alt='Band Photo at Common Cents Northeastern' />`,
+        `<img src='common-cents-stage-1.jpeg' alt='Common Cents Northeastern #1' />`,
+        `<img src='common-cents-stage-2.jpeg' alt='Common Cents Northeastern #2' />`,
+        `<img src='brandy-nyc.jpg' alt='Brandy Melville NYC' />`,
+        `<img src='junkyard-boston.jpeg' alt='Junkyard Boston' />`,
+    ];
+    
     const songsIvePlayed = [
         `<iframe style={{"border-radius": "12px"}} src="https://open.spotify.com/embed/track/1JklprC93mtLPeqn8D2w02?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
         `<iframe style={{"border-radius": "12px"}} src="https://open.spotify.com/embed/track/3zejtdOOa90ObNXH92gvhW?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
@@ -27,10 +29,10 @@ function Music({navbarSelected}) {
         `<iframe style={{"border-radius": "12px"}} src="https://open.spotify.com/embed/artist/2vnB6tuQMaQpORiRdvXF9H?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
         `<iframe style={{"border-radius": "12px"}} src="https://open.spotify.com/embed/artist/5NyCIBCeU080ynEj33S4hC?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
         `<iframe style={{"border-radius": "12px"}} src="https://open.spotify.com/embed/artist/1UJKiAI4Evnhh1ExDse25D?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
+        `<iframe style={{"border-radius": "12px"}} src="https://open.spotify.com/embed/artist/0SwK6bwzmGkViNoxSbJ5Mk?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
+        `<iframe style={{"border-radius": "12px"}} src="https://open.spotify.com/embed/artist/0QitJHI0ZwMa5F9TR6EYSl?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
         `<iframe style={{"border-radius": "12px"}} src="https://open.spotify.com/embed/artist/6VgPyGeGO86DztjK7GCYT3?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
     ];
-
-    const songwritingClubLink = "https://www.instagram.com/huskysongwriters/";
 
     if (navbarSelected === "music") return (
         <MusicInfo>
@@ -46,10 +48,11 @@ function Music({navbarSelected}) {
                     including most of the ones I'll mention below. Additionally, the songs I have played on below have over 150k combined plays on Spotify!
                 </p>
 
-                <ReadMore content={readMoreMusic} showText={readMoreMusicShowText} />
+                <h2>
+                    Some Fun Photos
+                </h2>
 
-                <br /> 
-                <a target="_blank" rel="noreferrer" href={songwritingClubLink}>More information on the Songwriting Club!</a>
+                <Carousel items={favPhotos} />
 
                 <h2>
                     Songs I've Played On

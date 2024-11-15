@@ -47,7 +47,7 @@ const BodyCard = styled.div`
 
     h2 {
         font-size: 50px;
-        color: #C44F8C;
+        color: #e0b6dc;
         background: none;
     }
 
@@ -116,13 +116,15 @@ const BannerImage = styled.div`
     }
 
     .bluPhoto {
+        position: static;
         background-image: 
-        linear-gradient(to bottom, rgba(25, 18, 32, 0), rgba(25, 18, 32, 1) 98%), 
-        linear-gradient(to right, rgba(25, 18, 32, 1) 0%, rgba(25, 18, 32, 0) 40%, rgba(25, 18, 32, 0) 60%, rgba(25, 18, 32, 1) 100%),
-        url('blu-photo-full.JPG');
+        linear-gradient(to bottom,rgba(25, 18, 32, 1) 0%, rgba(25, 18, 32, 0) 15%, rgba(25, 18, 32, 0) 65%, rgba(25, 18, 32, 1) 100%), 
+        linear-gradient(to right, rgba(25, 18, 32, 1) 0%, rgba(25, 18, 32, 0) 20%, rgba(25, 18, 32, 0) 80%, rgba(25, 18, 32, 1) 100%),
+        url('drum-pic-1.JPEG');
         background-size: cover;
         height: 50vw;
-        width: 500000vw;
+        width: 10000vw;
+        border-radius: 100px;
     }
 `
 

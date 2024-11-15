@@ -38,6 +38,10 @@ const ShowHide = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
+        border: solid;
+        border-radius: 15px;
+        border-color: #8392E7;
+        padding: 20px;
     }
 
     .readMore {

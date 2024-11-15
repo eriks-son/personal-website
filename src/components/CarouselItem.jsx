@@ -15,11 +15,17 @@ export const CarouselItem = ({item}) => {
 
 const CarouselItemDiv = styled.div`
     .carousel-item-individual {
-        display: inline-flex;
         align-items: center;
-        justify-content: center;
         height: 352px;
         width: 2000px;
-        padding: 0 20px 0 20px;
+        margin: 0 20px 0 20px;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+    
+    img {
+        overflow: hidden;
+        height: auto;
+        border-radius: 15px;
     }
 `
