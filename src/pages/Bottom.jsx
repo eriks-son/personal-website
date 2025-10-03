@@ -24,11 +24,11 @@ const BottomDiv = styled.div`
         justify-content: space-evenly;
         align-contents: center;
         padding: 50px 0 50px 0;
-        background-color: #191220;
+        background-color: rgba(56, 16, 21);
     }
 
     a {
-        color: #C44F8C;
+        color: rgb(90, 140, 200);
         text-decoration: none;
         font-size: 20px;
     }

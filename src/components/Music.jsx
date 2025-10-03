@@ -8,7 +8,7 @@ function Music({navbarSelected}) {
         `<img src='common-cents-stage-1.jpeg' alt='Common Cents Northeastern #1' />`,
         `<img src='common-cents-stage-2.jpeg' alt='Common Cents Northeastern #2' />`,
         `<img src='brandy-nyc.jpg' alt='Brandy Melville NYC' />`,
-        `<img src='junkyard-boston.jpeg' alt='Junkyard Boston' />`,
+        `<img src='uf-stage-photo.jpg' alt='Drumset on stage at University of Florida' />`,
     ];
     
     const songsIvePlayed = [
@@ -19,17 +19,17 @@ function Music({navbarSelected}) {
     ];
 
     const artistsIvePlayed = [
-        `<iframe style={{"border-radius": "12px"}} src="https://open.spotify.com/embed/artist/2VRzDvOFUJEFtt0vvnPg9A?utm_source=generator" width="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
         `<iframe style={{"border-radius": "12px"}} src="https://open.spotify.com/embed/artist/2zDF6PeSxBlLKma4IMAlLu?utm_source=generator" width="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
+        `<iframe style={{"border-radius": "12px"}} src="https://open.spotify.com/embed/artist/2VRzDvOFUJEFtt0vvnPg9A?utm_source=generator" width="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
         `<iframe style={{"border-radius": "12px"}} src="https://open.spotify.com/embed/artist/6Kf3t2SUht5mKLfTu6CC3a?utm_source=generator" width="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
         `<iframe style={{"border-radius": "12px"}} src="https://open.spotify.com/embed/artist/6ohqAvsZ41nCnBSwrDpqvc?utm_source=generator" width="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
     ];
 
     const artistsIveOpened = [
         `<iframe style={{"border-radius": "12px"}} src="https://open.spotify.com/embed/artist/2vnB6tuQMaQpORiRdvXF9H?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
-        `<iframe style={{"border-radius": "12px"}} src="https://open.spotify.com/embed/artist/5NyCIBCeU080ynEj33S4hC?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
-        `<iframe style={{"border-radius": "12px"}} src="https://open.spotify.com/embed/artist/1UJKiAI4Evnhh1ExDse25D?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
         `<iframe style={{"border-radius": "12px"}} src="https://open.spotify.com/embed/artist/0SwK6bwzmGkViNoxSbJ5Mk?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
+        `<iframe style={{"border-radius": "12px"}} src="https://open.spotify.com/embed/artist/1UJKiAI4Evnhh1ExDse25D?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
+        `<iframe style={{"border-radius": "12px"}} src="https://open.spotify.com/embed/artist/5NyCIBCeU080ynEj33S4hC?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
         `<iframe style={{"border-radius": "12px"}} src="https://open.spotify.com/embed/artist/0QitJHI0ZwMa5F9TR6EYSl?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
         `<iframe style={{"border-radius": "12px"}} src="https://open.spotify.com/embed/artist/6VgPyGeGO86DztjK7GCYT3?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
     ];
@@ -45,7 +45,11 @@ function Music({navbarSelected}) {
                 <p>
                     Fortunately, a High School friend who went to Northeastern as well introduced me to the Songwriting Club. I don't write my own music,
                     but it was a great way to meet new people and it gave me so many new opportunities to play music. It was through this that I met incredibly talented artists
-                    including most of the ones I'll mention below. Additionally, the songs I have played on below have over 150k combined plays on Spotify!
+                    including most of the ones I'll mention below.
+                </p>
+                <p>
+                    Since then, I've been playing shows primarily for <a href='https://www.hongjoin.org/'>hongjoin</a> as well as helping with booking and logistics.
+                    This includes shows at universities such as UF, Rutgers, Northeastern, UMass Amherst, OU, UC Merced, and more.
                 </p>
 
                 <h2>
@@ -77,7 +81,15 @@ function Music({navbarSelected}) {
 
 const MusicInfo = styled.div`
     .items {
-        display: block
+        display: block;
+    }
+
+    p {
+        display: block;
+    }
+
+    a {
+        display: inline;
     }
 `
 

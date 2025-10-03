@@ -47,18 +47,18 @@ const BodyCard = styled.div`
 
     h2 {
         font-size: 50px;
-        color: #e0b6dc;
+        color: rgb(235, 210, 200);
         background: none;
     }
 
     p {
         font-size: 20px;
-        color: #e0b6dc;
+        color: rgb(180, 160, 160);
         background: none;
     }
 
     a {
-        color: #8392E7;
+        color: rgb(90, 140, 200);
         text-decoration: none;
         font-size: 20px;
         font-style: italic;
@@ -99,11 +99,11 @@ const BodyCard = styled.div`
 const TitleText = styled.div`
     h2 {
         font-size: 8vw;
-        color: #e0b6dc;
+        color: rgb(235, 210, 200);
         left: 0%;
         background: none;
         transform: translate(0%, 15vw);
-        text-shadow: 0 0 40px rgb(25, 18, 32);
+        text-shadow: 0 0 40px rgb(56, 16, 21);
         position: absolute;
         height: 10%;
     }
@@ -118,8 +118,8 @@ const BannerImage = styled.div`
     .bluPhoto {
         position: static;
         background-image: 
-        linear-gradient(to bottom,rgba(25, 18, 32, 1) 0%, rgba(25, 18, 32, 0) 15%, rgba(25, 18, 32, 0) 65%, rgba(25, 18, 32, 1) 100%), 
-        linear-gradient(to right, rgba(25, 18, 32, 1) 0%, rgba(25, 18, 32, 0) 20%, rgba(25, 18, 32, 0) 80%, rgba(25, 18, 32, 1) 100%),
+        linear-gradient(to bottom,rgba(56, 16, 21, 1) 0%, rgba(56, 16, 21, 0) 15%, rgba(56, 16, 21, 0) 65%, rgba(56, 16, 21, 1) 100%), 
+        linear-gradient(to right, rgba(56, 16, 21, 1) 0%, rgba(56, 16, 21, 0) 20%, rgba(56, 16, 21, 0) 80%, rgba(56, 16, 21, 1) 100%),
         url('drum-pic-1.JPEG');
         background-size: cover;
         height: 50vw;
@@ -133,7 +133,7 @@ const Background = styled.div`
         padding: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(25, 18, 32);
+        background-color: rgba(56, 16, 21);
         background-size: cover;
         display: flex;
         justify-content: center;

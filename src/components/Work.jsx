@@ -1,19 +1,27 @@
-import React from 'react';
 import styled from 'styled-components';
-import { ReadMore } from './ReadMore';
-import { ReadMoreWayfair } from './read_mores/ReadMoreWayfair';
 
 function Work({navbarSelected}) {
     const cgfLink = "https://sell.wayfair.com/operate-castlegate-forwarding";
     const lillipiesLink = "https://lillipies.com/";
-    const readMoreWayfair = (
-        <ReadMoreWayfair />
-    );
-    const readMoreWayfairShowText = "Click to read more about a specific problem I tackled!";
 
     if (navbarSelected === "work") return (
         <WorkInfo>
             <div className='items'>
+                <h2>Capital One (TDP)</h2>
+                <p>
+                    I started full time at Capital One as a part of their TDP program in one of the New York offices.
+                    I work on a fullstack team that generates customers' bank statements. 
+                    This includes scheduled jobs and Lambda/Fargate APIs to support our portion of the live Capital One website
+                    as well as the website Capital One customer support associates use. Our frontend work is done in TypeScript and Angular
+                    whereas our backend is a mix of JavaScript, Python, and Java.
+                </p>
+                <p>
+                    In addition to maintaining and modernizing the existing tech stack, there is plenty of work being done to
+                    accomodate new customers as a part of the acquisition of Discover. This means not only supporting the transition
+                    but consolidating the best of what both services have to offer into one unified product.
+                </p>
+                <br />
+
                 <h2>Capital One (TIP)</h2>
                 <p>
                     Over the summer of 2024, I was a Software Engineer in Capital One's Technology Internship Program in Richmond, VA.
@@ -26,10 +34,7 @@ function Work({navbarSelected}) {
                     job that started in Databricks and was converted into an AWS Glue job. By the end of the project,
                     all of our code was live in production and using real life production data from our daily job.
                 </p>
-                <p>
-                    Despite being in a completely new city and knowing no one, it wasn't long before I felt at home.
-                    My manager and his entire team were more than welcoming and always there to help out with our project.
-                </p>
+                <br />
 
                 <h2>Wayfair (CGF)</h2>
                 <p>
@@ -44,15 +49,8 @@ function Work({navbarSelected}) {
                     the technical aspects of the job, but the business ones as well. For the technical aspects, the backend used Python and Kafka for asynchronous event handling,
                     while the frontend was React with TypeScript.
                 </p>
-
-                <ReadMore content={readMoreWayfair} showText={readMoreWayfairShowText} />
-
-                <p>
-                    I was also incredibly fortunate for the welcoming and helpful team. Everybody involved was never more than a Slack message away from helping me as I was getting set up
-                    and I was fortunate enough to be given real tickets and real responsibility the moment I was onboarded. This has forced me to get comfortable with
-                    the stack and the business operations quickly without feeling like I was drowning in new information.
-                </p>
                 <a target="_blank" rel="noreferrer" href={cgfLink}>More information on CastleGate Forwarding!</a>
+                <br />
 
                 <h2>LiLLiPiES Bakery</h2>
                 <p>
@@ -65,7 +63,6 @@ function Work({navbarSelected}) {
                     I worked there for over 4 years and throughout my time I trained over 20 different employees. It's one of the first places I visit whenever I'm
                     back home in New Jersey and Jen will always be like a second mom to me.
                 </p>
-                <img src='Lillipies photo.jpg' alt='Jen Carson, owner of LiLLiPiES' />
                 <a target="_blank" rel="noreferrer" href={lillipiesLink}>More information on LiLLiPiES!</a>
             </div>
         </WorkInfo>

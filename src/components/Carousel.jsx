@@ -76,7 +76,7 @@ const CarouselDiv = styled.div`
         border: none;
         cursor: pointer;
         margin-top: 20px;
-        color: #e0b6dc;
+        color: rgb(180, 160, 160);
     }
 
     .carousel-indicators {
@@ -101,7 +101,7 @@ const CarouselDiv = styled.div`
     }
 
     .indicator-symbol-active {
-        color: pink;
+        color: rgb(180, 160, 160);
     }
 `
 

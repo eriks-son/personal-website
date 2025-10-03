@@ -56,7 +56,7 @@ const ShowHide = styled.div`
         padding: 0;
         font: inherit;
         cursor: pointer;
-        color: #8392E7;
+        color: rgb(90, 140, 200);
         text-decoration: none;
         font-size: 20px;
         font-style: normal;
